@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%= require('html-loader!./layout/html-head.html')%>
+        <title><%= htmlWebpackPlugin.options.title %> -- DeShop, shopping desire</title>
+    </head> 
+    <body>
+        <%= require('html-loader!./layout/nav.html')%>
+        <div class="page-wrap">
+             <div class="w">
+                 <div class="user-con">
+                     <div class="user-title">Sign Up</div>
+                     <div class="user-box">
+                         <div class="error-item">
+                             <i class="fa fa-minus-circle error-icon"></i>
+                             <p class="err-msg">Error</p>
+                         </div>
+                         <div class="user-item">
+                             <label class="user-label" for="username">
+                                <i class="fa fa-user"></i>
+                             </label>
+                             <input class="user-content" id="usernmae" placeholder="Username" autocomplete="off">
+                            </div>
+                         <div class="user-item">
+                                <label class="user-label" for="password">
+                                   <i class="fa fa-lock"></i>
+                                </label>
+                            <input type="password" class="user-content" id="password" placeholder="Password" autocomplete="off">
+                         </div>
+                         <div class="user-item">
+                                <label class="user-label" for="password-confirm">
+                                   <i class="fa fa-lock"></i>
+                                </label>
+                            <input type="password" class="user-content" id="password-confirm" placeholder="Password confirm" autocomplete="off">
+                         </div>
+                         <div class="user-item">
+                                <label class="user-label" for="phone">
+                                   <i class="fa fa-phone"></i>
+                                </label>
+                                <input class="user-content" id="phone" placeholder="Phone number" autocomplete="off">
+                            </div>
+                        <div class="user-item">
+                                <label class="user-label" for="email">
+                                    <i class="fa fa-envelope"></i>
+                                </label>
+                                <input class="user-content" id="email" placeholder="Email" autocomplete="off">
+                            </div>
+                        <div class="user-item">
+                            <label class="user-label" for="question">
+                                    <i class="fa fa-question"></i>
+                                </label>
+                                <input class="user-content" id="question" placeholder="Security Question" autocomplete="off">
+                            </div>
+                        <div class="user-item">
+                                <label class="user-label" for="answer">
+                                    <i class="fa fa-key"></i>
+                                </label>
+                                <input class="user-content" id="answer" placeholder="Answer" autocomplete="off">
+                            </div>
+                            <a class="btn btn-submit" id="submit">Login</a>
+                        <div class="link-item">
+                            <a href="./user-login.html" class="link">Login now!</a>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+        <%= require('html-loader!./layout/footer.html')%>
+    </body>
+</html>

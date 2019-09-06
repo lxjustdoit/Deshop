@@ -6,6 +6,7 @@
     font-size: 36px;
     color: rgb(23, 124, 219);
     font-weight: bold;
+    text-decoration: none;
 }
 .header .search-con{
     padding: 40px 0 30px 250px;
@@ -23,4 +24,13 @@
     position: absolute;
     height: 44px;
     width: 156px;
+}
+/* crumb nav */
+.crumb{
+    height:50px;
+    line-height: 50px;
+    background: #eee;
+    color: #888;
+    font-size: 14px;
+    border-top: 2px solid rgb(126, 196, 243);
 }

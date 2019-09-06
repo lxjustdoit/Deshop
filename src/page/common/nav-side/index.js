@@ -8,7 +8,7 @@ var navSide = {
         navList:[
             {name:'My DeShop', desc:'My Deshop', href:'./user-center.html'},
             {name:'My Order', desc:'Order', href:'./uer-order.html'},
-            {name:'Password', desc:'Password-reset', href:'./password-update.html'},
+            {name:'Password', desc:'Password-reset', href:'./user-pass-update.html'},
             {name:'About DeShop', desc:'About', href:'./about.html'},
     ]
     },

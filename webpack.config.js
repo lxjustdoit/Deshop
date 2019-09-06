@@ -22,7 +22,12 @@ var config = {
   entry: {  
       'common':['./src/page/common/index.js'],
       'index':['./src/page/index/index.js'],
-      'login':['./src/page/login/index.js'],
+      'user-login':['./src/page/user-login/index.js'],
+      'user-register':['./src/page/user-register/index.js'],
+      'user-pass-reset':['./src/page/user-pass-reset/index.js'],
+      'user-center':['./src/page/user-center/index.js'],
+      'user-center-update':['./src/page/user-center-update/index.js'],
+      'user-pass-update':['./src/page/user-pass-update/index.js'],
       'result':['./src/page/result/index.js']
     },
   output: {
@@ -63,7 +68,12 @@ var config = {
       new Ex("css/[name].css"),
       //html template pack
       new HtmlWebpackPlugin(getHtmlConfig('index', 'Home Page') ),
-      new HtmlWebpackPlugin(getHtmlConfig('login', 'Login') ),
+      new HtmlWebpackPlugin(getHtmlConfig('user-login', 'Login') ),
+      new HtmlWebpackPlugin(getHtmlConfig('user-register', 'Sign up') ),
+      new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset', 'Password Reset') ),
+      new HtmlWebpackPlugin(getHtmlConfig('user-center', 'Profile') ),
+      new HtmlWebpackPlugin(getHtmlConfig('user-center-update', 'Information Update') ),
+      new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', 'Password Update') ),
       new HtmlWebpackPlugin(getHtmlConfig('result', 'Result Page') ),
     ],
 };

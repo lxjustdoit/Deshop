@@ -54,7 +54,7 @@ var _ds = {
         alert(msg || 'Something wrong?')
     },
     //number emial validation 
-    validata: function(value,type){
+    validate: function(value,type){
         var value = $.trim(value);
         //null validation
         if('require' === type){
@@ -71,7 +71,7 @@ var _ds = {
     },
     //login redirect
     doLogin: function (){
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
     },
     //homepage redirect
     goHome: function(){

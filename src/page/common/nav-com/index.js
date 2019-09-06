@@ -15,7 +15,7 @@ var navcom = {
             _ds.doLogin();
         });
         $('.js-register').click(function(){
-            window.location.href = './register.html';
+            window.location.href = './user-register.html';
         });
         $('.js-logout').click(function(){
             _user.logout(function(res){
