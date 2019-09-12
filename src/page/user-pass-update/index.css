@@ -5,7 +5,8 @@
     font-size: 14px;
 }
 .form-line .label{
-    width: 80px;
+    display: inline-block;
+    width: 150px;
     text-align: center;
 }
 .form-line .input{

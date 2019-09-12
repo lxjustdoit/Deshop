@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%= require('html-loader!./layout/html-head.html')%>
+        <title><%= htmlWebpackPlugin.options.title %> -- DeShop, shopping desire</title>
+    </head> 
+    <body>
+        <%= require('html-loader!./layout/nav-com.html')%>
+        <%= require('html-loader!./layout/header.html')%>
+        <div class="crumb">
+            <div class="w">
+                <div class="crumb-con">
+                    <a href="./index.html" class="link">Deshop</a>>
+                    <span class="link-text"><%= htmlWebpackPlugin.options.title %></span>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrap w">
+            <ul class="sort-con">
+                <li class="sort-item active" data-type="default">Default</li>
+                <li class="sort-item" data-type="price">
+                    <span>Price</span>
+                    <i class="fa fa-sort-asc"></i>
+                    <i class="fa fa-sort-desc"></i>
+                </li>
+            </ul>
+            <ul class="p-list-con">
+            </ul>
+            <!-- pagination container -->
+            <div class="pagination"></div>
+        </div>
+        <%= require('html-loader!./layout/footer.html')%>
+    </body>
+</html>

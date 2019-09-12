@@ -4,6 +4,7 @@ var _ds = require('util/dtools.js');
 //common header
 var header = {
     init:function(){
+        this.onload();  
         this.bindEvent();
     },
     onload:function(){

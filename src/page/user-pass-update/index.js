@@ -14,7 +14,7 @@ var page = {
     bindEvent:function(){
         var _this = this;
         //after click submit
-        $(document).on('click', 'btn-submit',function(){
+        $(document).on('click', '.btn-submit', function(){
             var userInfo = {
                 password: $.trim($('#password').val()),
                 passwordNew: $.trim($('#password-new').val()),
@@ -34,7 +34,7 @@ var page = {
             }else{
                 _ds.errorTips(validateResult.errMsg);
             }
-        })
+        });
     },
     validateForm:function(formData){
             var result = {

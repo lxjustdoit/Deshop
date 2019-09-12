@@ -22,6 +22,8 @@ var config = {
   entry: {  
       'common':['./src/page/common/index.js'],
       'index':['./src/page/index/index.js'],
+      'list':['./src/page/list/index.js'],
+      'detail':['./src/page/detail/index.js'],
       'user-login':['./src/page/user-login/index.js'],
       'user-register':['./src/page/user-register/index.js'],
       'user-pass-reset':['./src/page/user-pass-reset/index.js'],
@@ -69,6 +71,8 @@ var config = {
       //html template pack
       new HtmlWebpackPlugin(getHtmlConfig('index', 'Home Page') ),
       new HtmlWebpackPlugin(getHtmlConfig('user-login', 'Login') ),
+      new HtmlWebpackPlugin(getHtmlConfig('list', 'Produts List') ),
+      new HtmlWebpackPlugin(getHtmlConfig('detail', 'Produts Detail') ),
       new HtmlWebpackPlugin(getHtmlConfig('user-register', 'Sign up') ),
       new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset', 'Password Reset') ),
       new HtmlWebpackPlugin(getHtmlConfig('user-center', 'Profile') ),

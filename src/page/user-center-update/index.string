@@ -19,5 +19,5 @@
         <span class="label">Answer:</span>
         <input class="input" id="answer" autocomplete="off" value="{{answer}}"/>
     </div>
-        <span href="./user-center.html" class="btn" >Submit</span>
+        <span href="./user-center.html" class="btn btn-submit" >Submit</span>
 </div>

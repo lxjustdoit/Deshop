@@ -15,7 +15,7 @@ var page = {
     bindEvent:function(){
         var _this = this;
         //after click submit
-        $(document).on('click', 'btn-submit',function(){
+        $(document).on('click', '.btn-submit', function(){
             var userInfo = {
                 phone: $.trim($('#phone').val()),
                 email: $.trim($('#email').val()),
