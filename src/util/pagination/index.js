@@ -23,7 +23,7 @@ var Pagination = function(){
 //render pagination, prototype is used for other instance extend 
 Pagination.prototype.render = function(userOption) {
     this.option = $.extend({}, this.defaultOption, userOption);
-    //wether container is legal
+    //whether container is legal
     if(!(this.option.container instanceof jQuery)){
         return;
     }
@@ -52,8 +52,8 @@ Pagination.prototype.getPaginationHtml = function(){
     for(var i = start; i<=end; i++){
         pageArray.push({
             name: i,
-            value: i,
-            active: (i ===option.pageNum)
+            value: i,                       
+            active: (i === option.pageNum)
         });
     };
     pageArray.push({
