@@ -1,0 +1,30 @@
+<table class="product-table">
+        <tr>
+            <th class="cell-img">&nbsp;</th>
+            <th class="cell-info">Product</th>
+            <th class="cell-price">Price</th>
+            <th class="cell-count">Amount</th>
+            <th class="cell-total">Total</th>
+        </tr>
+        {{#orderItemVoList}}
+        <tr>
+            <td class="cell-img">
+                <a href="./detail.html?productId={{productId}}" target="_blank">
+                    <img src="{{imageHost}}{{productImage}}" alt="{{productName}}" class="p-img"/>
+                </a>
+            </td>
+            <td class="cell-info">
+                <a href="./detail.html" class="link">{{productName}}</a>
+            </td>
+            <td class="cell-price">${{currentUnitPrice}}</td>
+            <td class="cell-count">{{quantity}}</td>
+            <td class="cell-total">${{totalPrice}}</td>
+        </tr>
+        {{/orderItemVoList}}
+    </table>
+    <div class="submit-con">
+        <span>Total: </span>
+        <span class="submit-total">${{productTotalPrice}}</span>
+        <span class="btn order-submit">Checkout</span>
+    </div>
+</div>

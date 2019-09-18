@@ -132,7 +132,7 @@ var page={
         $(document).on('click', '.btn-submit', function(){
             //total price > 0, submit it
             if(_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice>0){
-                window.location.href = './confirm.html';
+                window.location.href = './order-confirm.html';
             }else{
                 _ds.errorTips('Please items you like');
             }
