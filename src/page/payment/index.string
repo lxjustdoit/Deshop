@@ -1,0 +1,7 @@
+<p class="payment-tips">Order submitted, please place your order! Order number: {{orderNo}}</p>
+<p class="payment-tips enhance">
+    Please scan QR code to pay
+</p>
+<div class="img-con">
+    <img src="{{qrUrl}}" alt="QR" class="qr-code"/>
+</div>

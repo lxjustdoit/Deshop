@@ -52,6 +52,7 @@ var page = {
         });
     },
     dataFilter:function(data){
+        //10 status is order submitted, but have not paied
         data.needPay = data.status == 10;
         data.isCancelable = data.status == 10;
     }
